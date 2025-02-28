@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Formulário de Dados</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Dados Pessoais</h2>
+        <form action="#" method="POST" id="formulario">
+            <!-- Peso -->
+            <div class="form-group">
+                <label for="peso">Peso (kg)</label>
+                <input type="number" id="peso" name="peso" placeholder="Digite seu peso" required>
+            </div>
+
+            <!-- Altura -->
+            <div class="form-group">
+                <label for="altura">Altura (cm)</label>
+                <input type="number" id="altura" name="altura" placeholder="Digite sua altura" required>
+            </div>
+
+            <!-- Idade -->
+            <div class="form-group">
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required>
+            </div>
+
+            <div class="form-group">
+                <label class="radio-label">Escolha sua dieta:</label>
+                <label>
+                    <input type="radio" id="hipercalorico" name="dieta" value="hipercalorico">
+                    Hipercalórico
+                </label>
+                <label>
+                    <input type="radio" id="hipocalorico" name="dieta" value="hipocalorico">
+                    Hipocalórico
+                </label>
+            </div>
+
+            <!-- Botão de envio -->
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <div class="container2">
+        <h2>Dieta</h2>
+        <div class="resultados">
+            <div>
+                <h3>Quantidade de Carboidratos:</h3>
+                <h3>Quantidade de Proteinas:</h3>
+                <h3>Quantidade de Gordura</h3>
+                <h3>Gasto Calórico:</h3>
+                <h3>Calorias a Bater:</h3>
+            </div>
+            <div>
+                <h3><span id="txtCarb"></span></h3>
+                <h3><span id="txtProt"></span></h3>
+                <h3><span id="txtGord"></span></h3>
+                <h3><span id="txtGastoCalorico"></span></h3>
+                <h3><span id="txtObjetivo"></span></h3>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/index.js" ></script> 
+</body>
+</html>
